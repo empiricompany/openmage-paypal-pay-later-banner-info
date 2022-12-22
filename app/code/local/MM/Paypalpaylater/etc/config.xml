@@ -47,7 +47,7 @@
                                 <config>
                                     <children>
                                         <mm_paypalpaylater>
-                                            <title>Media Ordini Config</title>
+                                            <title>Paypal Pay Later Info Config</title>
                                         </mm_paypalpaylater>
                                     </children>
                                 </config>

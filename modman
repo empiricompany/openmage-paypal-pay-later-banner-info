@@ -1,0 +1,4 @@
+app/code/local/MM/Paypalpaylater app/code/local/MM/Paypalpaylater
+app/design/frontend/base/default/layout/mm/paypalpaylater.xml app/design/frontend/base/default/layout/mm/paypalpaylater.xml
+app/design/frontend/base/default/template/mm/paypalpaylater app/design/frontend/base/default/template/mm/paypalpaylater
+app/etc/modules/MM_Paypalpaylater.xml app/etc/modules/MM_Paypalpaylater.xml
