@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MM_Paypalpaylater>
+            <version>1.0.0</version>
+        </MM_Paypalpaylater>
+    </modules>
+
+    <global>
+        <blocks>
+            <mm_paypalpaylater>
+                <class>MM_Paypalpaylater_Block</class>
+            </mm_paypalpaylater>
+        </blocks>
+        <helpers>
+            <mm_paypalpaylater>
+                <class>MM_Paypalpaylater_Helper</class>
+            </mm_paypalpaylater>
+        </helpers>
+        <models>
+            <mm_paypalpaylater>
+                <class>MM_Paypalpaylater_Model</class>
+            </mm_paypalpaylater>
+        </models>
+    </global>
+    
+    <frontend>
+        <layout>
+            <updates>
+                <paypal>
+                    <file>mm/paypalpaylater.xml</file>
+                </paypal>
+            </updates>
+        </layout>
+    </frontend>
+
+    <adminhtml>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <mm_paypalpaylater>
+                                            <title>Media Ordini Config</title>
+                                        </mm_paypalpaylater>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+
+    <default>
+        <mm_paypalpaylater>
+            <general>
+                <visible_on_product>1</visible_on_product>
+                <visible_on_cart>1</visible_on_cart>
+                <minimum_amount>30</minimum_amount>
+            </general>
+            <style>
+                <logotype>inline</logotype>
+                <color>black</color>
+                <textsize>12</textsize>
+            </style>
+        </mm_paypalpaylater>
+    </default>
+</config>

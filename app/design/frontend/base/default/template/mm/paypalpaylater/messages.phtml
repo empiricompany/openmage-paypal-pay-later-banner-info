@@ -1,0 +1,16 @@
+<?php
+/**
+ * @var $this MM_Paypalpaylater_Block_Messages
+ */
+?>
+<div class="paypal_paylater_banner paypal_paylater_banner-<?php echo $this->getIsInCatalogProduct() ? 'product' : 'cart'; ?>"
+    data-pp-message
+    data-pp-style-layout="text"
+    data-pp-style-logo-type="<?php echo $this->helper('mm_paypalpaylater')->getLogotype(); ?>"
+    data-pp-style-text-color="<?php echo $this->helper('mm_paypalpaylater')->getColor(); ?>"
+    data-pp-style-text-size="<?php echo $this->helper('mm_paypalpaylater')->getTextsize(); ?>"
+    data-pp-placement="<?php echo $this->getIsInCatalogProduct() ? 'product' : 'cart'; ?>" 
+    data-pp-amount="<?php echo $this->getAmount(); ?>"
+    style="margin: 18px 0">
+</div>
+<script src="<?php echo $this->getSrcSdk(); ?>" async></script>

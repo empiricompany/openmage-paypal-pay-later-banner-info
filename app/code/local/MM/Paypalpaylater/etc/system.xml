@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <mm translate="label" module="mm_paypalpaylater">
+            <label>MM Extensions</label>
+            <sort_order>10</sort_order>
+        </mm>
+    </tabs>
+    <sections>
+        <mm_paypalpaylater translate="label" module="mm_paypalpaylater">
+            <label>Paypal Pay Later Banner</label>
+            <tab>mm</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>200</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <client_id translate="label">
+                            <label>Client ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Create new REST API App in https://developer.paypal.com/dashboard/applications]]></comment>
+                        </client_id>
+                        <visible_on_product translate="label comment">
+                            <label>Visible on Product Page</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Display on product page.]]></comment>
+                        </visible_on_product>
+                        <visible_on_cart translate="label comment">
+                            <label>Visible on Cart Page</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Display on cart page.]]></comment>
+                        </visible_on_cart>
+                        <minimum_amount translate="label comment">
+                            <label>Minimum Amount</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Minimum Amount to show banner. Minimum order amount of Paypal is € 30]]></comment>
+                        </minimum_amount>
+                    </fields>
+                </general>
+                <style translate="label">
+                    <label>Style</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <comment><![CDATA[Style https://developer.paypal.com/docs/checkout/pay-later/it/integrate/customize-messages/]]></comment>
+                    <fields>
+                        <logotype translate="label comment">
+                            <label>Logo type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>mm_paypalpaylater/adminhtml_system_config_source_logotype</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[This attribute sets the logo type used in the message. The default, if it is not provided, is primary.]]></comment>
+                        </logotype>
+                        <color translate="label comment">
+                            <label>Text color</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>mm_paypalpaylater/adminhtml_system_config_source_color</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Sets the text and logo color of the message.]]></comment>
+                        </color>
+                        <textsize translate="label comment">
+                            <label>Text size</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>mm_paypalpaylater/adminhtml_system_config_source_textsize</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Sets the size of the message text.]]></comment>
+                        </textsize>
+                    </fields>
+                </style>
+            </groups>
+        </mm_paypalpaylater>
+       
+    </sections>
+</config>
