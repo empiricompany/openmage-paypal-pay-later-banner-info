@@ -5,6 +5,8 @@ This extension place by default the message widget in the some layout location a
 
 Paypal Documentation: https://developer.paypal.com/docs/checkout/pay-later/us/integrate/
 
+PayPal Preview Tool: https://www.paypal.com/ppcredit/messaging-library
+
 Layout handles / references:
 -------------
 - catalog_product_view > product.info.addtocart
