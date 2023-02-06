@@ -27,9 +27,9 @@
     <frontend>
         <layout>
             <updates>
-                <paypal>
+                <mm_paypalpaylater>
                     <file>mm/paypalpaylater.xml</file>
-                </paypal>
+                </mm_paypalpaylater>
             </updates>
         </layout>
     </frontend>
