@@ -6,7 +6,7 @@
                 <action method="setText">
                     <text><![CDATA[
                         <link rel="preconnect" href="//www.paypal.com />
-    ]]>                    </text>
+                    ]]></text>
                 </action>
             </block>
         </reference>

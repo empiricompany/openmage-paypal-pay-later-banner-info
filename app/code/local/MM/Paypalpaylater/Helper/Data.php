@@ -9,13 +9,13 @@ class MM_Paypalpaylater_Helper_Data extends Mage_Core_Helper_Abstract {
             Mage::app()->getLocale()->getLocaleCode(),
             Mage::app()->getStore()->getCurrentCurrencyCode()
         );
-		$return = "<![CDATA[<script>";
+		$return = "<script>";
 		$return.= "var PAYPAL_SCRIPT = '".$url."';";
 		$return.= "var sp = document.createElement('script');";
 		$return.= "sp.setAttribute('src', PAYPAL_SCRIPT);";
 		$return.= "sp.setAttribute('defer', true);";
 		$return.= "document.head.appendChild(sp);";
-		$return.= "</script>]]>";
+		$return.= "</script>";
 		return $return;
 
     }
