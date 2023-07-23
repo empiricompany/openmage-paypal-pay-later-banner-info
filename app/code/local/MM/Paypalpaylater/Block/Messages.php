@@ -15,18 +15,6 @@ class MM_Paypalpaylater_Block_Messages extends Mage_Core_Block_Template {
      */
     protected $_paymentMethodCode = Mage_Paypal_Model_Config::METHOD_WPP_EXPRESS;
 
-    const SDK_SRC = 'https://www.paypal.com/sdk/js?client-id=%s&locale=%s&currency=%s&components=messages&enable-funding=paylater';
-
-    public function getSrcSdk() {
-
-        return sprintf( MM_Paypalpaylater_Block_Messages::SDK_SRC,
-
-            Mage::helper('mm_paypalpaylater')->getClientId(),
-            Mage::app()->getLocale()->getLocaleCode(),
-            Mage::app()->getStore()->getCurrentCurrencyCode()
-        );
-    }
-
     public function getAmount() {
         /** @var Mage_Catalog_Model_Product $currentProduct */
         $currentProduct = Mage::registry('current_product');

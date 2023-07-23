@@ -1,5 +1,23 @@
 <?xml version="1.0"?>
 <layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <block type="core/text" name="mm_paypalpaylater_sdk" after="-">
+                <action method="setText">
+                    <text><![CDATA[
+                        <link rel="preconnect" href="//www.paypal.com />
+    ]]>                    </text>
+                </action>
+            </block>
+        </reference>
+        <reference name="before_body_end">
+            <block type="core/text" name="mm_paypalpaylater_sdk" after="-">
+                <action method="setText">
+                    <text helper="mm_paypalpaylater/getSrcSdk" />
+                </action>
+            </block>
+        </reference>
+    </default>
     <checkout_cart_index>
         <reference name="checkout.cart.methods">
             <block type="mm_paypalpaylater/messages" name="checkout.cart.methods.paypalpaylater" before="-" template="mm/paypalpaylater/messages.phtml">
