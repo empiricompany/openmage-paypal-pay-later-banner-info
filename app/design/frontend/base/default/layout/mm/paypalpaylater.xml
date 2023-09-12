@@ -5,7 +5,7 @@
             <block type="core/text" name="mm_paypalpaylater_sdk" after="-">
                 <action method="setText">
                     <text><![CDATA[
-                        <link rel="preconnect" href="//www.paypal.com />
+                        <link rel="preconnect" href="//www.paypal.com" />
                     ]]></text>
                 </action>
             </block>
