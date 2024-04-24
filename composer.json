@@ -1,0 +1,16 @@
+{
+  "name": "empiricompany/openmage-paypal-pay-later-banner-info",
+  "license": "OSL-3.0",
+  "type": "magento-module",
+  "description": "Render Paypal Pay Later Messages in product page and cart page for Magento 1 / OpenMage",
+  "keywords": [
+    "magento",
+    "magento1",
+    "openmage"
+  ],
+  "homepage": "https://github.com/empiricompany/openmage-paypal-pay-later-banner-info",
+  "require": {
+    "php": "^7.2||^8.0",
+    "magento-hackathon/magento-composer-installer": "*"
+  }
+}
